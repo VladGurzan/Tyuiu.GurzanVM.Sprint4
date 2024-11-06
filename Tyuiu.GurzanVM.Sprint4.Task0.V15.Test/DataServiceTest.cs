@@ -12,7 +12,7 @@ namespace Tyuiu.GurzanVM.Sprint4.Task0.V15.Test
 
             int[] numsArray = { 9, 8, 7, 6, 5, 7, 3, 2, 7, 3 };
             int res = ds.GetMultOddArrEl(numsArray);
-            int waitArray = 41;
+            int waitArray = 138915;
             Assert.AreEqual(waitArray, res);
 
             
