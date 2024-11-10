@@ -1,6 +1,6 @@
-using Tyuiu.GurzanVM.Sprint4.Task4.V21.Lib;
+using Tyuiu.GurzanVM.Sprint4.Task5.V16.Lib;
 
-namespace Tyuiu.GurzanVM.Sprint4.Task4.V21.Test
+namespace Tyuiu.GurzanVM.Sprint4.Task5.V16.Test
 {
     [TestClass]
     public class DataServiceTest
@@ -15,10 +15,14 @@ namespace Tyuiu.GurzanVM.Sprint4.Task4.V21.Test
                                           { 8, 3, 6, 7, 7 },
                                           { 5, 3, 8, 4, 5 },
                                           { 3, 7, 4, 3, 8 } };
-            int res = ds.Calculate(mas2);
-            int wait = 68;
+            int[,] res  = ds.Calculate(mas2);
+            int[,] wait =              { { 1, 1, 1, 1, 1 },
+                                         { 1, 1, 1, 1, 1 },
+                                         { 1, 1, 1, 1, 1 },
+                                         { 1, 1, 1, 1, 1 },
+                                         { 1, 1, 1, 1, 1 } };
 
-            Assert.AreEqual(wait, res);
+            CollectionAssert.AreEqual(wait, res);
         }
     }
 }
