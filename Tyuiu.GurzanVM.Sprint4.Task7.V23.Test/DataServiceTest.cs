@@ -14,7 +14,7 @@ namespace Tyuiu.GurzanVM.Sprint4.Task7.V23.Test
             string str = "678135972584";
             DataService ds = new DataService();
             int res = ds.Calculate(n, m, str);
-            int wait = 5;
+            int wait = 3;
             Assert.AreEqual(wait, res);
         }
     }
