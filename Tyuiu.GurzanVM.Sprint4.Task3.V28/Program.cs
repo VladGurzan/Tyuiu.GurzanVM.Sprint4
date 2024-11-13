@@ -36,24 +36,19 @@ namespace Tyuiu.GurzanVM.Sprint4.Task3.V28
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            for (int i = 0; i < rows; i++)
-            {
-                for (int j = 0; j < colums; j++)
-                {
-                    Console.Write($"{mtrx[i, j]} \t");
-                }
+            int[,] array = {
+    {5, 4, 9, 8, 5},
+    {4, 6, 6, 9, 9},
+    {9, 8, 4, 8, 8},
+    {6, 8, 6, 8, 9},
+    {9, 4, 6, 6, 7}
+};
 
-                Console.WriteLine();
-            }
+            int minInFourthColumn = ds.Calculate(array);
 
-            Console.WriteLine();
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
-            Console.WriteLine("***************************************************************************");
-            int res = ds.Calculate(mtrx);
-
-            Console.WriteLine("Минимальное число в 4 столбце = " + res);
-            Console.ReadKey();
+            Console.WriteLine($"Минимальный элемент в четвертом столбце: {minInFourthColumn}");
+            Console.WriteLine("************************************************************************");
+            Console.ReadLine();
 
         }
     }

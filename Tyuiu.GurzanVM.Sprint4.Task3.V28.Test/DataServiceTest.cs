@@ -8,16 +8,18 @@ namespace Tyuiu.GurzanVM.Sprint4.Task3.V28.Test
         [TestMethod]
         public void TestMethod1()
         {
+            int[,] array = {
+                {5, 4, 9, 8, 5},
+                {4, 6, 6, 9, 9},
+                {9, 8, 4, 8, 8},
+                {6, 8, 6, 8, 9},
+                {9, 4, 6, 6, 7}
+            };
             DataService ds = new DataService();
-            int[,] mas2 = new int[5, 5] { { 5, 4, 9, 8, 5 },
-                                          { 4, 6, 6, 9, 9 },
-                                          { 9, 8, 4, 8, 8 },
-                                          { 6, 8, 6, 8, 9 },
-                                          { 9, 4, 6, 6, 7 } };
+            int expectedMin = 6;
+            int actualMin = ds.Calculate(array);
 
-            int res = ds.Calculate(mas2);
-            int wait = 6;
-            Assert.AreEqual(wait, res);
+            Assert.AreEqual(expectedMin, actualMin);
         }
     }
 }
