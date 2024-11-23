@@ -16,7 +16,7 @@ namespace Tyuiu.GurzanVM.Sprint4.Task7.V23
 
             Console.Title = "Спринт #4 | Выполнил: Гурзан.В.М  | СМАРТБ-24-1";
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* Спринт #7                                                               *");
+            Console.WriteLine("* Спринт #4                                                               *");
             Console.WriteLine("* Тема: Одномерные массивы. Ввод с клавиатуры                             *");
             Console.WriteLine("* Задание #7                                                              *");
             Console.WriteLine("* Вариант #13                                                             *");
